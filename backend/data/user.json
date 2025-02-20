@@ -1,0 +1,58 @@
+[
+    {
+        "_id": "user001",
+        "full_name": "Trần Phạm Nhật Quân",
+        "email": "nhatquan2k4@gmail.com",
+        "password": "Tpnq2010@",
+        "role": "user",
+        "phone": "0979836562",
+        "address": "Thanh Xuân, Hà Nội",
+        "loyalty_points": {
+            "$numberInt": "0"
+        },
+        "created_at": "2025-02-17T10:00:00Z",
+        "updated_at": "2025-02-17T10:00:00Z"
+    },
+    {
+        "iduser": "user002",
+        "full_name": "Trần Vũ Minh Quang",
+        "email": "quangskboss@gmail.com",
+        "password": "TVMQ1510@",
+        "role": "user",
+        "phone": "099999999",
+        "address": "Hoàng Mai, Hà Nội",
+        "loyalty_points": {
+            "$numberInt": "0"
+        },
+        "created_at": "2025-02-17T10:00:00Z",
+        "updated_at": "2025-02-17T10:00:00Z"
+    },
+    {
+        "iduser": "user003",
+        "full_name": "Phạm Xuân Nguyên",
+        "email": "nguyen030904@gmail.com",
+        "password": "PXN0309@",
+        "role": "user",
+        "phone": "0942923663",
+        "address": "Đống Đa, Hà Nội",
+        "loyalty_points": {
+            "$numberInt": "0"
+        },
+        "created_at": "2025-02-17T10:00:00Z",
+        "updated_at": "2025-02-17T10:00:00Z"
+    },
+    {
+        "iduser": "user004",
+        "full_name": "Hoàng Thọ Tú",
+        "email": "hoangthotu2192004@gmail.com",
+        "password": "hoangtu111@",
+        "role": "user",
+        "phone": "0865045893",
+        "address": "Hoàng Mai, Hà Nội",
+        "loyalty_points": {
+            "$numberInt": "0"
+        },
+        "created_at": "2025-02-17T10:00:00Z",
+        "updated_at": "2025-02-17T10:00:00Z"
+    }
+]
