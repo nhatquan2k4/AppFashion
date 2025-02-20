@@ -1,20 +1,26 @@
 import React from 'react';
-import { SafeAreaView, StyleSheet } from 'react-native';
-import ProductList from './ProductList.js'; // Đường dẫn tới file ProductList.js
+import { useEffect, useState } from 'react';
+import { View, Text, Image, FlatList, ScrollView, StyleSheet } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { Provider as PaperProvider } from 'react-native-paper';
+import { createStackNavigator } from '@react-navigation/stack';
+
+
+
+import LoadingScreen from './src/screens/LoadingScreen.js';
+import { theme } from './src/core/theme.js';
+import { Products } from 'Product';
+
+
 
 const App = () => {
   return (
-    <SafeAreaView style={styles.container}>
-      <ProductList />
-    </SafeAreaView>
+    <div>
+
+      <h1>Welcome to Our Shop</h1>
+      <Products />
+    </div>
   );
 };
 
-const styles = StyleSheet.create({
-  container: { flex: 1, padding: 20 },
-  header: { fontSize: 20, fontWeight: 'bold', marginBottom: 10 },
-  item: { marginBottom: 10, padding: 10, backgroundColor: '#f0f0f0', borderRadius: 5 },
-});
-
-
-export default App;
+export default App
