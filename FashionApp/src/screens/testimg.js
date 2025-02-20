@@ -10,7 +10,7 @@ const cloudinary = require('cloudinary');
 cloudinary.v2.config({
     cloud_name: 'dwuwoqode',
     api_key: '295554132721264',
-    api_secret: 'RSyS9gNyNYwewD2sMXsDEM4Rs6U',
+    api_secret: 'lâý ở trong cloudinary',
     secure: true,
 });
 
