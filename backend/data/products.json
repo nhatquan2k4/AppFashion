@@ -1,0 +1,960 @@
+[
+    {
+        "_id": "product001",
+        "name": "Nike Air Force 1",
+        "sizes": [
+            {
+                "$numberInt": "38"
+            },
+            {
+                "$numberInt": "39"
+            },
+            {
+                "$numberInt": "40"
+            },
+            {
+                "$numberInt": "41"
+            },
+            {
+                "$numberInt": "42"
+            }
+        ],
+        "brand": "Nike",
+        "price": {
+            "$numberInt": "2900000"
+        },
+        "quantity": {
+            "$numberInt": "100"
+        },
+        "created_at": "2025-02-17T10:00:00Z",
+        "updated_at": "2025-02-17T10:00:00Z",
+        "colors": [
+            {
+                "color_name": "Đen",
+                "image_url": "https://res-console.cloudinary.com/dgmy6mekk/media_explorer_thumbnails/36ac05c3e9dc63d7346ae2df3a5e7fd8/detailed"
+            },
+            {
+                "color_name": "Trắng",
+                "image_url": "https://res-console.cloudinary.com/dgmy6mekk/media_explorer_thumbnails/50c02a393909a6c6f7b366d1add11254/detailed"
+            }
+        ]
+    },
+    {
+        "_id": "product002",
+        "name": "Air Jordan 1",
+        "sizes": [
+            {
+                "$numberInt": "38"
+            },
+            {
+                "$numberInt": "39"
+            },
+            {
+                "$numberInt": "40"
+            },
+            {
+                "$numberInt": "41"
+            },
+            {
+                "$numberInt": "42"
+            }
+        ],
+        "brand": "Nike",
+        "price": {
+            "$numberInt": "3600000"
+        },
+        "quantity": {
+            "$numberInt": "100"
+        },
+        "created_at": "2025-02-17T10:00:00Z",
+        "updated_at": "2025-02-17T10:00:00Z",
+        "colors": [
+            {
+                "color_name": "Đen",
+                "image_url": "https://res-console.cloudinary.com/dgmy6mekk/media_explorer_thumbnails/3c6e9bdd436e80a772297fbd2d837d18/detailed"
+            },
+            {
+                "color_name": "Trắng",
+                "image_url": "https://res-console.cloudinary.com/dgmy6mekk/media_explorer_thumbnails/9bf3faebc361c4362ddffff9623ad6a4/detailed"
+            }
+        ]
+    },
+    {
+        "_id": "product019",
+        "name": "Men's Monday Shoe",
+        "sizes": [
+            {
+                "$numberInt": "38"
+            },
+            {
+                "$numberInt": "39"
+            },
+            {
+                "$numberInt": "40"
+            },
+            {
+                "$numberInt": "41"
+            },
+            {
+                "$numberInt": "42"
+            }
+        ],
+        "brand": "Balenciaga",
+        "price": {
+            "$numberInt": "2300000"
+        },
+        "quantity": {
+            "$numberInt": "100"
+        },
+        "created_at": "2025-02-17T10:00:00Z",
+        "updated_at": "2025-02-17T10:00:00Z",
+        "colors": [
+            {
+                "color_name": "Trắng",
+                "image_url": "https://res-console.cloudinary.com/dgmy6mekk/media_explorer_thumbnails/fde394bed8be87a1e3fed5bcbb84d67b/detailed"
+            },
+            {
+                "color_name": "Đen",
+                "image_url": "https://res-console.cloudinary.com/dgmy6mekk/media_explorer_thumbnails/e333fdbae6c85e78932e4d026f07cfaa/detailed"
+            }
+        ]
+    },
+    {
+        "_id": "product003",
+        "name": "Air Jordan 1 High",
+        "sizes": [
+            {
+                "$numberInt": "38"
+            },
+            {
+                "$numberInt": "39"
+            },
+            {
+                "$numberInt": "40"
+            },
+            {
+                "$numberInt": "41"
+            },
+            {
+                "$numberInt": "42"
+            }
+        ],
+        "brand": "Nike",
+        "price": {
+            "$numberInt": "4500000"
+        },
+        "quantity": {
+            "$numberInt": "100"
+        },
+        "created_at": "2025-02-17T10:00:00Z",
+        "updated_at": "2025-02-17T10:00:00Z",
+        "colors": [
+            {
+                "color_name": "Đen",
+                "image_url": "https://res-console.cloudinary.com/dgmy6mekk/media_explorer_thumbnails/0f837bae93783cf10c2517096524fa6b/detailed"
+            },
+            {
+                "color_name": "Xanh dương",
+                "image_url": "https://res-console.cloudinary.com/dgmy6mekk/media_explorer_thumbnails/0c572fe1ae9137c33a249ffeb71a06ff/detailed"
+            },
+            {
+                "color_name": "Đỏ",
+                "image_url": "https://res-console.cloudinary.com/dgmy6mekk/media_explorer_thumbnails/f8d8d681656c350ac40dcfbed46a5285/detailed"
+            }
+        ]
+    },
+    {
+        "_id": "product004",
+        "name": "Nike Dunk Low",
+        "sizes": [
+            {
+                "$numberInt": "38"
+            },
+            {
+                "$numberInt": "39"
+            },
+            {
+                "$numberInt": "40"
+            },
+            {
+                "$numberInt": "41"
+            },
+            {
+                "$numberInt": "42"
+            }
+        ],
+        "brand": "Nike",
+        "price": {
+            "$numberInt": "3800000"
+        },
+        "quantity": {
+            "$numberInt": "100"
+        },
+        "created_at": "2025-02-17T10:00:00Z",
+        "updated_at": "2025-02-17T10:00:00Z",
+        "colors": [
+            {
+                "color_name": "Hồng",
+                "image_url": "https://res-console.cloudinary.com/dgmy6mekk/media_explorer_thumbnails/c24d25d259ab9a1a29529f235ad6a41c/detailed"
+            },
+            {
+                "color_name": "Xanh lá",
+                "image_url": "https://res-console.cloudinary.com/dgmy6mekk/media_explorer_thumbnails/7fdaffe7b9f05febbb03113f5d5920da/detailed"
+            }
+        ]
+    },
+    {
+        "_id": "product005",
+        "name": "Air Jordan 4",
+        "sizes": [
+            {
+                "$numberInt": "38"
+            },
+            {
+                "$numberInt": "39"
+            },
+            {
+                "$numberInt": "40"
+            },
+            {
+                "$numberInt": "41"
+            },
+            {
+                "$numberInt": "42"
+            }
+        ],
+        "brand": "Nike",
+        "price": {
+            "$numberInt": "4100000"
+        },
+        "quantity": {
+            "$numberInt": "100"
+        },
+        "created_at": "2025-02-17T10:00:00Z",
+        "updated_at": "2025-02-17T10:00:00Z",
+        "colors": [
+            {
+                "color_name": "Trắng",
+                "image_url": "https://res-console.cloudinary.com/dgmy6mekk/media_explorer_thumbnails/3d6a5f41532157a4332c595dda339d3b/detailed"
+            },
+            {
+                "color_name": "Đen",
+                "image_url": "https://res-console.cloudinary.com/dgmy6mekk/media_explorer_thumbnails/a0a3dda63660b77c30b02b0aa23a6975/detailed"
+            }
+        ]
+    },
+    {
+        "_id": "product006",
+        "name": "Nike V2K Run",
+        "sizes": [
+            {
+                "$numberInt": "38"
+            },
+            {
+                "$numberInt": "39"
+            },
+            {
+                "$numberInt": "40"
+            },
+            {
+                "$numberInt": "41"
+            },
+            {
+                "$numberInt": "42"
+            }
+        ],
+        "brand": "Nike",
+        "price": {
+            "$numberInt": "3500000"
+        },
+        "quantity": {
+            "$numberInt": "100"
+        },
+        "created_at": "2025-02-17T10:00:00Z",
+        "updated_at": "2025-02-17T10:00:00Z",
+        "colors": [
+            {
+                "color_name": "Trắng",
+                "image_url": "https://res-console.cloudinary.com/dgmy6mekk/media_explorer_thumbnails/c891d31c6039529f4c2786f5ad61d81b/detailed"
+            }
+        ]
+    },
+    {
+        "_id": "product013",
+        "name": "CA Pro Classic Trainers",
+        "sizes": [
+            {
+                "$numberInt": "38"
+            },
+            {
+                "$numberInt": "39"
+            },
+            {
+                "$numberInt": "40"
+            },
+            {
+                "$numberInt": "41"
+            },
+            {
+                "$numberInt": "42"
+            }
+        ],
+        "brand": "Puma",
+        "price": {
+            "$numberInt": "2600000"
+        },
+        "quantity": {
+            "$numberInt": "100"
+        },
+        "created_at": "2025-02-17T10:00:00Z",
+        "updated_at": "2025-02-17T10:00:00Z",
+        "colors": [
+            {
+                "color_name": "Đen",
+                "image_url": "https://res-console.cloudinary.com/dfqdh40iu/media_explorer_thumbnails/e6371fe0ac777acb96c855a902b5e378/detailed"
+            },
+            {
+                "color_name": "Trắng",
+                "image_url": "https://res-console.cloudinary.com/dfqdh40iu/media_explorer_thumbnails/5d1c08aea4c84041f4ce715ee034f552/detailed"
+            },
+            {
+                "color_name": "Trắng Hồng",
+                "image_url": "https://res-console.cloudinary.com/dfqdh40iu/media_explorer_thumbnails/05a3ff301922a48b5b2040392dad4ec4/detailed"
+            }
+        ]
+    },
+    {
+        "_id": "product020",
+        "name": "Men's Hike Sneaker",
+        "sizes": [
+            {
+                "$numberInt": "38"
+            },
+            {
+                "$numberInt": "39"
+            },
+            {
+                "$numberInt": "40"
+            },
+            {
+                "$numberInt": "41"
+            },
+            {
+                "$numberInt": "42"
+            }
+        ],
+        "brand": "Balenciaga",
+        "price": {
+            "$numberInt": "2800000"
+        },
+        "quantity": {
+            "$numberInt": "100"
+        },
+        "created_at": "2025-02-17T10:00:00Z",
+        "updated_at": "2025-02-17T10:00:00Z",
+        "colors": [
+            {
+                "color_name": "Đỏ",
+                "image_url": "https://res-console.cloudinary.com/dgmy6mekk/media_explorer_thumbnails/e2d5f91095edbd9712ecc9fe6957fdac/detailed"
+            },
+            {
+                "color_name": "Be",
+                "image_url": "https://res-console.cloudinary.com/dgmy6mekk/media_explorer_thumbnails/dfa0b884f587b6c45ca89d9820e75412/detailed"
+            },
+            {
+                "color_name": "Đen",
+                "image_url": "https://res-console.cloudinary.com/dgmy6mekk/media_explorer_thumbnails/e534f0cc19ad73c1127146b761fafea6/detailed"
+            }
+        ]
+    },
+    {
+        "_id": "product014",
+        "name": "Easy Rider Vintage",
+        "sizes": [
+            {
+                "$numberInt": "38"
+            },
+            {
+                "$numberInt": "39"
+            },
+            {
+                "$numberInt": "40"
+            },
+            {
+                "$numberInt": "41"
+            },
+            {
+                "$numberInt": "42"
+            }
+        ],
+        "brand": "Puma",
+        "price": {
+            "$numberInt": "1300000"
+        },
+        "quantity": {
+            "$numberInt": "100"
+        },
+        "created_at": "2025-02-17T10:00:00Z",
+        "updated_at": "2025-02-17T10:00:00Z",
+        "colors": [
+            {
+                "color_name": "Xanh Lá",
+                "image_url": "https://res-console.cloudinary.com/dfqdh40iu/media_explorer_thumbnails/5a133802e189ffc5bf8357037b56c35f/detailed"
+            }
+        ]
+    },
+    {
+        "_id": "product015",
+        "name": "Suede XL Denim",
+        "sizes": [
+            {
+                "$numberInt": "38"
+            },
+            {
+                "$numberInt": "39"
+            },
+            {
+                "$numberInt": "40"
+            },
+            {
+                "$numberInt": "41"
+            },
+            {
+                "$numberInt": "42"
+            }
+        ],
+        "brand": "Puma",
+        "price": {
+            "$numberInt": "2500000"
+        },
+        "quantity": {
+            "$numberInt": "100"
+        },
+        "created_at": "2025-02-17T10:00:00Z",
+        "updated_at": "2025-02-17T10:00:00Z",
+        "colors": [
+            {
+                "color_name": "Xanh Dương",
+                "image_url": "https://res-console.cloudinary.com/dfqdh40iu/media_explorer_thumbnails/be393fa509234c9afea6d63c16ca6d2c/detailed"
+            }
+        ]
+    },
+    {
+        "_id": "product021",
+        "name": "Women's Track Trail Laces Sneaker",
+        "sizes": [
+            {
+                "$numberInt": "38"
+            },
+            {
+                "$numberInt": "39"
+            },
+            {
+                "$numberInt": "40"
+            },
+            {
+                "$numberInt": "41"
+            },
+            {
+                "$numberInt": "42"
+            },
+            {
+                "$numberInt": "43"
+            }
+        ],
+        "brand": "Balenciaga",
+        "price": {
+            "$numberInt": "30000000"
+        },
+        "quantity": {
+            "$numberInt": "100"
+        },
+        "created_at": "2025-02-17T10:00:00Z",
+        "updated_at": "2025-02-17T10:00:00Z",
+        "colors": [
+            {
+                "color_name": "Xám",
+                "image_url": "https://res-console.cloudinary.com/dgmy6mekk/media_explorer_thumbnails/8c923c58fd7e42b41fda9cac47b97df7/detailed"
+            }
+        ]
+    },
+    {
+        "_id": "product022",
+        "name": "Men's Giant Boot",
+        "sizes": [
+            {
+                "$numberInt": "38"
+            },
+            {
+                "$numberInt": "39"
+            },
+            {
+                "$numberInt": "40"
+            },
+            {
+                "$numberInt": "41"
+            },
+            {
+                "$numberInt": "42"
+            },
+            {
+                "$numberInt": "43"
+            },
+            {
+                "$numberInt": "44"
+            }
+        ],
+        "brand": "Balenciaga",
+        "price": {
+            "$numberInt": "45000000"
+        },
+        "quantity": {
+            "$numberInt": "100"
+        },
+        "created_at": "2025-02-17T10:00:00Z",
+        "updated_at": "2025-02-17T10:00:00Z",
+        "colors": [
+            {
+                "color_name": "Đen",
+                "image_url": "https://res-console.cloudinary.com/dgmy6mekk/media_explorer_thumbnails/e96b3c91c35e657281c7e0fa5ee5c8fa/detailed"
+            }
+        ]
+    },
+    {
+        "_id": "product023",
+        "name": "Women's Bel Air 80mm Sandal",
+        "sizes": [
+            {
+                "$numberInt": "38"
+            },
+            {
+                "$numberInt": "39"
+            },
+            {
+                "$numberInt": "40"
+            },
+            {
+                "$numberInt": "41"
+            },
+            {
+                "$numberInt": "42"
+            },
+            {
+                "$numberInt": "43"
+            }
+        ],
+        "brand": "Balenciaga",
+        "price": {
+            "$numberInt": "26000000"
+        },
+        "quantity": {
+            "$numberInt": "100"
+        },
+        "created_at": "2025-02-17T10:00:00Z",
+        "updated_at": "2025-02-17T10:00:00Z",
+        "colors": [
+            {
+                "color_name": "Đen",
+                "image_url": "https://res-console.cloudinary.com/dgmy6mekk/media_explorer_thumbnails/ecb3963c9ce6d41f07ec8cc8573b301b/detailed"
+            },
+            {
+                "color_name": "Be",
+                "image_url": "https://res-console.cloudinary.com/dgmy6mekk/media_explorer_thumbnails/41203479a431664cbee63d725943d346/detailed"
+            }
+        ]
+    },
+    {
+        "_id": "product024",
+        "name": "Men's Rhino Derby",
+        "sizes": [
+            {
+                "$numberInt": "38"
+            },
+            {
+                "$numberInt": "39"
+            },
+            {
+                "$numberInt": "40"
+            },
+            {
+                "$numberInt": "41"
+            },
+            {
+                "$numberInt": "42"
+            },
+            {
+                "$numberInt": "43"
+            },
+            {
+                "$numberInt": "44"
+            },
+            {
+                "$numberInt": "45"
+            }
+        ],
+        "brand": "Balenciaga",
+        "price": {
+            "$numberInt": "23000000"
+        },
+        "quantity": {
+            "$numberInt": "100"
+        },
+        "created_at": "2025-02-17T10:00:00Z",
+        "updated_at": "2025-02-17T10:00:00Z",
+        "colors": [
+            {
+                "color_name": "Đen",
+                "image_url": "https://res-console.cloudinary.com/dgmy6mekk/media_explorer_thumbnails/e8fe2f6fff4dd51c8c72132b72e7d829/detailed"
+            }
+        ]
+    },
+    {
+        "_id": "product016",
+        "name": "Creeper Phatty In Session",
+        "sizes": [
+            {
+                "$numberInt": "36"
+            },
+            {
+                "$numberInt": "37"
+            },
+            {
+                "$numberInt": "38"
+            },
+            {
+                "$numberInt": "39"
+            }
+        ],
+        "brand": "Puma",
+        "price": {
+            "$numberInt": "5800000"
+        },
+        "quantity": {
+            "$numberInt": "100"
+        },
+        "created_at": "2025-02-17T10:00:00Z",
+        "updated_at": "2025-02-17T10:00:00Z",
+        "colors": [
+            {
+                "color_name": "Đen",
+                "image_url": "https://res-console.cloudinary.com/dfqdh40iu/media_explorer_thumbnails/ba58d72c3e1c0759c8de0f00fa5abca9/detailed"
+            },
+            {
+                "color_name": "Đỏ",
+                "image_url": "https://res-console.cloudinary.com/dfqdh40iu/media_explorer_thumbnails/1eccbc4215ba7328ba4a1b3bb4cecd29/detailed"
+            }
+        ]
+    },
+    {
+        "_id": "product017",
+        "name": "Palermo Clobber Dresscode",
+        "sizes": [
+            {
+                "$numberInt": "36"
+            },
+            {
+                "$numberInt": "37"
+            },
+            {
+                "$numberInt": "38"
+            },
+            {
+                "$numberInt": "39"
+            }
+        ],
+        "brand": "Puma",
+        "price": {
+            "$numberInt": "2700000"
+        },
+        "quantity": {
+            "$numberInt": "100"
+        },
+        "created_at": "2025-02-17T10:00:00Z",
+        "updated_at": "2025-02-17T10:00:00Z",
+        "colors": [
+            {
+                "color_name": "Xanh Ngọc",
+                "image_url": "https://res-console.cloudinary.com/dfqdh40iu/media_explorer_thumbnails/995f174ab87eb2c7e3c77af156a982bb/detailed"
+            },
+            {
+                "color_name": "Nâu",
+                "image_url": "https://res-console.cloudinary.com/dfqdh40iu/media_explorer_thumbnails/8549aa2c67cf5e73636e6f5ec3b9b38b/detailed"
+            }
+        ]
+    },
+    {
+        "_id": "product018",
+        "name": "Palermo Players Lane",
+        "sizes": [
+            {
+                "$numberInt": "37"
+            },
+            {
+                "$numberInt": "42"
+            }
+        ],
+        "brand": "Puma",
+        "price": {
+            "$numberInt": "2700000"
+        },
+        "quantity": {
+            "$numberInt": "100"
+        },
+        "created_at": "2025-02-17T10:00:00Z",
+        "updated_at": "2025-02-17T10:00:00Z",
+        "colors": [
+            {
+                "color_name": "Đen Vàng",
+                "image_url": "https://res-console.cloudinary.com/dfqdh40iu/media_explorer_thumbnails/910475c266b6bda96924172fe6ddc6d3/detailed"
+            }
+        ]
+    },
+    {
+        "_id": "product007",
+        "name": "Barreda Shoes",
+        "sizes": [
+            {
+                "$numberInt": "38"
+            },
+            {
+                "$numberInt": "39"
+            },
+            {
+                "$numberInt": "40"
+            },
+            {
+                "$numberInt": "41"
+            },
+            {
+                "$numberInt": "42"
+            }
+        ],
+        "brand": "Adidas",
+        "price": {
+            "$numberInt": "1500000"
+        },
+        "quantity": {
+            "$numberInt": "100"
+        },
+        "created_at": "2025-02-17T10:00:00Z",
+        "updated_at": "2025-02-17T10:00:00Z",
+        "colors": [
+            {
+                "color_name": "Đen",
+                "image_url": "https://res-console.cloudinary.com/dgmy6mekk/media_explorer_thumbnails/00c498263ea74bc9f0c979b17e821f00/detailed"
+            },
+            {
+                "color_name": "Trắng",
+                "image_url": "https://res-console.cloudinary.com/dgmy6mekk/media_explorer_thumbnails/6eb1b88e6422aed11803bbb3703388d0/detailed"
+            }
+        ]
+    },
+    {
+        "_id": "product008",
+        "name": "BVL Court 2.0 Shoes",
+        "sizes": [
+            {
+                "$numberInt": "38"
+            },
+            {
+                "$numberInt": "39"
+            },
+            {
+                "$numberInt": "40"
+            },
+            {
+                "$numberInt": "41"
+            },
+            {
+                "$numberInt": "42"
+            }
+        ],
+        "brand": "Adidas",
+        "price": {
+            "$numberInt": "1300000"
+        },
+        "quantity": {
+            "$numberInt": "100"
+        },
+        "created_at": "2025-02-17T10:00:00Z",
+        "updated_at": "2025-02-17T10:00:00Z",
+        "colors": [
+            {
+                "color_name": "Đen",
+                "image_url": "https://res-console.cloudinary.com/dgmy6mekk/media_explorer_thumbnails/1df93e2dfb332edc2a412e398e9213cb/detailed"
+            },
+            {
+                "color_name": "Trắng",
+                "image_url": "https://res-console.cloudinary.com/dgmy6mekk/media_explorer_thumbnails/68868842aba2b51a4430c77f208542bf/detailed"
+            },
+            {
+                "color_name": "Nâu",
+                "image_url": "https://res-console.cloudinary.com/dgmy6mekk/media_explorer_thumbnails/343b1d0af039fe913d6dbb41149ae862/detailed"
+            }
+        ]
+    },
+    {
+        "_id": "product009",
+        "name": "Breaknet 2.0 Shoes",
+        "sizes": [
+            {
+                "$numberInt": "38"
+            },
+            {
+                "$numberInt": "39"
+            },
+            {
+                "$numberInt": "40"
+            },
+            {
+                "$numberInt": "41"
+            },
+            {
+                "$numberInt": "42"
+            }
+        ],
+        "brand": "Adidas",
+        "price": {
+            "$numberInt": "1600000"
+        },
+        "quantity": {
+            "$numberInt": "100"
+        },
+        "created_at": "2025-02-17T10:00:00Z",
+        "updated_at": "2025-02-17T10:00:00Z",
+        "colors": [
+            {
+                "color_name": "Đen",
+                "image_url": "https://res-console.cloudinary.com/dgmy6mekk/media_explorer_thumbnails/17232b1e2d34f7dadc60a05b73ecd9f1/detailed"
+            },
+            {
+                "color_name": "Trắng",
+                "image_url": "https://res-console.cloudinary.com/dgmy6mekk/media_explorer_thumbnails/535622413bf900c0dc7db9feee48d03d/detailed"
+            }
+        ]
+    },
+    {
+        "_id": "product012",
+        "name": "Cloudfoam Comfy",
+        "sizes": [
+            {
+                "$numberInt": "38"
+            },
+            {
+                "$numberInt": "39"
+            },
+            {
+                "$numberInt": "40"
+            },
+            {
+                "$numberInt": "41"
+            },
+            {
+                "$numberInt": "42"
+            }
+        ],
+        "brand": "Adidas",
+        "price": {
+            "$numberInt": "1500000"
+        },
+        "quantity": {
+            "$numberInt": "100"
+        },
+        "created_at": "2025-02-17T10:00:00Z",
+        "updated_at": "2025-02-17T10:00:00Z",
+        "colors": [
+            {
+                "color_name": "Đen",
+                "image_url": "https://res-console.cloudinary.com/dgmy6mekk/media_explorer_thumbnails/7417c86416d9783d62cbfb352442d578/detailed"
+            },
+            {
+                "color_name": "Xám",
+                "image_url": "https://res-console.cloudinary.com/dgmy6mekk/media_explorer_thumbnails/81a204f16152ebdfbd4ea5ec2545a17e/detailed"
+            }
+        ]
+    },
+    {
+        "_id": "product010",
+        "name": "Daily 3.0 Shoes",
+        "sizes": [
+            {
+                "$numberInt": "38"
+            },
+            {
+                "$numberInt": "39"
+            },
+            {
+                "$numberInt": "40"
+            },
+            {
+                "$numberInt": "41"
+            },
+            {
+                "$numberInt": "42"
+            }
+        ],
+        "brand": "Adidas",
+        "price": {
+            "$numberInt": "1300000"
+        },
+        "quantity": {
+            "$numberInt": "100"
+        },
+        "created_at": "2025-02-17T10:00:00Z",
+        "updated_at": "2025-02-17T10:00:00Z",
+        "colors": [
+            {
+                "color_name": "Đen",
+                "image_url": "https://res-console.cloudinary.com/dgmy6mekk/media_explorer_thumbnails/1695fa7493245fb8ac45a60dda158d46/detailed"
+            },
+            {
+                "color_name": "Xám",
+                "image_url": "https://res-console.cloudinary.com/dgmy6mekk/media_explorer_thumbnails/45e25f97de4a428c7c1fb930e9158a7d/detailed"
+            },
+            {
+                "color_name": "Xanh Dương",
+                "image_url": "https://res-console.cloudinary.com/dgmy6mekk/media_explorer_thumbnails/fd58ebfb7e7125a674a1ffae47ada36a/detailed"
+            }
+        ]
+    },
+    {
+        "_id": "product011",
+        "name": "Ultraboost 1.0",
+        "sizes": [
+            {
+                "$numberInt": "38"
+            },
+            {
+                "$numberInt": "39"
+            },
+            {
+                "$numberInt": "40"
+            },
+            {
+                "$numberInt": "41"
+            },
+            {
+                "$numberInt": "42"
+            }
+        ],
+        "brand": "Adidas",
+        "price": {
+            "$numberInt": "4500000"
+        },
+        "quantity": {
+            "$numberInt": "100"
+        },
+        "created_at": "2025-02-17T10:00:00Z",
+        "updated_at": "2025-02-17T10:00:00Z",
+        "colors": [
+            {
+                "color_name": "Xám",
+                "image_url": "https://res-console.cloudinary.com/dgmy6mekk/media_explorer_thumbnails/ab9e40c82cf9dc26b0ff48ba61782069/detailed"
+            },
+            {
+                "color_name": "Trắng",
+                "image_url": "https://res-console.cloudinary.com/dgmy6mekk/media_explorer_thumbnails/69bb08971896ed5e3fa992adc4e25344/detailed"
+            }
+        ]
+    }
+]
