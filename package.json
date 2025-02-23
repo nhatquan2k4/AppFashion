@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "shopapp",
   "version": "1.0.0",
   "main": "index.js",
@@ -32,3 +33,20 @@
   },
   "private": true
 }
+=======
+  "dependencies": {
+    "@react-navigation/native": "^7.0.14",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongodb": "^6.13.0",
+    "mongoose": "^8.10.1",
+    "react-native-gesture-handler": "^2.23.1",
+    "react-native-reanimated": "^3.16.7",
+    "react-native-safe-area-context": "^5.2.0",
+    "react-native-screens": "^4.6.0",
+    "react-native-vector-icons": "^10.2.0",
+    "react-native-web": "^0.19.13"
+  }
+}
+>>>>>>> ea034e8f8d68aa5d58f3fbe06497d4a8419197be
