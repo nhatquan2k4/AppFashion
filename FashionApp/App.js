@@ -1,20 +1,26 @@
 import React from 'react';
-import { SafeAreaView, StyleSheet } from 'react-native';
-import ProductList from './ProductList.js'; // Đường dẫn tới file ProductList.js
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import SplashScreen from './screens/Splash';
+import LoginScreen from './screens/Login';
+import RegisterScreen from './screens/Register';
 
-const App = () => {
+const Stack = createStackNavigator();
+
+export default function App() {
   return (
-    <SafeAreaView style={styles.container}>
-      <ProductList />
-    </SafeAreaView>
+
+    
+    <NavigationContainer>
+      <Stack.Navigator screenOptions={{ 
+        headerShown: false,
+        initialRouteName: 'Splash',
+        
+         }}>
+        <Stack.Screen name="Splash" component={SplashScreen} />
+        <Stack.Screen name="Login" component={LoginScreen} />
+        <Stack.Screen name="Register" component={RegisterScreen} /> 
+      </Stack.Navigator>
+    </NavigationContainer>
   );
-};
-
-const styles = StyleSheet.create({
-  container: { flex: 1, padding: 20 },
-  header: { fontSize: 20, fontWeight: 'bold', marginBottom: 10 },
-  item: { marginBottom: 10, padding: 10, backgroundColor: '#f0f0f0', borderRadius: 5 },
-});
-
-
-export default App;
+}
