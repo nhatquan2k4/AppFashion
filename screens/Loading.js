@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet } from 'react-native';
+import { View, Text, Image, StyleSheet} from 'react-native';
 import CustomButton from '../components/ButtonLoading'; 
 
 const LoadingScreen = () => {
@@ -9,7 +9,7 @@ const LoadingScreen = () => {
       
       <View style={styles.textContainer}>
         <Text style={styles.title}>Panda</Text>
-        <CustomButton title="SHOP NOW" type = 'outline' onPress={() => console.log('SHOP NOW Pressed')} />
+        <CustomButton title="SHOP NOW" type = 'outline' onPress={() => navigation.navigate('Splash')} />
       </View>
     </View>
   );

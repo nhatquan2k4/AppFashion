@@ -2,8 +2,11 @@ import React from 'react';
 import { View, Image, StyleSheet, Text, TouchableOpacity } from 'react-native';
 import { Button } from 'react-native-web';
 import CustomButton from '../components/Button';
+import { useNavigation } from '@react-navigation/native';
 
 const SplashScreen = () => {
+const navigation = useNavigation();
+
   return (
     <View style={styles.container}>
       <Image source={require('../assets/anh2.png')} style={styles.image2} />
@@ -14,9 +17,9 @@ const SplashScreen = () => {
         <Text style = {{fontSize:12,fontWeight:'bold',marginTop: 30}}>Each men and women has their own style, Geeta {'\n'}          help you to create your unique style.</Text>
 
 
-          <CustomButton title = "LOGIN" type = 'outline' onPress = {() => console.log('Login Pressed')} />
+          <CustomButton title = "LOGIN" type = 'outline' onPress = {() => navigation.push('Login')} />
           <Text style = {{top: 98, fontSize:14, fontWeight:'bold'}}>--- OR ---</Text>
-          <CustomButton title = "REGISTER" type = 'fill'  onPress = {() => console.log('Register Pressed')} />
+          <CustomButton title = "REGISTER" type = 'fill'  onPress = {() => navigation.push('Register')} />
   
       </View>
     </View>
