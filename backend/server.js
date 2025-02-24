@@ -20,11 +20,13 @@ app.use(cors());
 // Import Routes
 const productRoutes = require("./src/routes/productRoutes");
 const userRoutes = require("./src/routes/userRoutes");
-
+const cartRoutes = require("./src/routes/cartRoutes");
+const orderRoutes = require("./src/routes/orderRoutes");
 // Routes
 app.use("/products", productRoutes);
 app.use("/users", userRoutes);
-
+app.use("/carts", cartRoutes);
+app.use("/api/orders", orderRoutes);
 // Lấy URI từ biến môi trường
 const MONGO_URI = process.env.MONGO_URI;
 const PORT = process.env.PORT || 5000;
