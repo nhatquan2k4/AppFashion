@@ -1,11 +1,12 @@
 import React from "react";
 import { SafeAreaView } from "react-native";
 import HomeScreen from "D:\\DaNenTang\\AppFashion\\FashionApp\\Screen\\HomeScreen.js";
+//import ProductDetailScreen from "D:\\DaNenTang\\AppFashion\\FashionApp\\Screen\\ProductDetaiưlScreen.js";
 
 const App = () => {
   return (
     <SafeAreaView style={{ flex: 1, paddingTop: 50 }}>
-      <HomeScreen />
+      <HomeScreen/>
     </SafeAreaView>
   );
 };
