@@ -4,18 +4,8 @@ import { auto } from '@cloudinary/url-gen/actions/resize';
 import { autoGravity } from '@cloudinary/url-gen/qualifiers/gravity';
 import { AdvancedImage } from '@cloudinary/react';
 
-
-const cloudinary = require('cloudinary');
-
-cloudinary.v2.config({
-    cloud_name: 'dwuwoqode',
-    api_key: '295554132721264',
-    api_secret: 'lâý ở trong cloudinary',
-    secure: true,
-});
-
 const testimg = () => {
-    const cld = new Cloudinary({ cloud: { cloudName: 'dwuwoqode' } });
+    const cld = new Cloudinary({ cloud: { cloudName: 'dgmy6mekk' } });
 
     // Use this sample image or upload your own via the Media Explorer
     const img = cld

@@ -1,26 +1,32 @@
-import React from 'react';
-import { useEffect, useState } from 'react';
-import { View, Text, Image, FlatList, ScrollView, StyleSheet } from 'react-native';
+import React from "react";
+import { View } from "react-native";
+import HomeScreen from "./src/screens/HomeScreen"
+import Cart from "./src/screens/Cart"
 import { NavigationContainer } from '@react-navigation/native';
-import { Provider as PaperProvider } from 'react-native-paper';
 import { createStackNavigator } from '@react-navigation/stack';
+import SplashScreen from './src/screens/Splash';
+import LoginScreen from './src/screens/Login';
+import RegisterScreen from './src/screens/Register';
 
 
 
-import LoadingScreen from './src/screens/LoadingScreen.js';
-import { theme } from './src/core/theme.js';
-import { Products } from 'Product';
 
 
 
-const App = () => {
+const Stack = createStackNavigator();
+
+export default function App() {
   return (
-    <div>
+    <NavigationContainer>
+      <Stack.Navigator screenOptions={{
+        headerShown: false,
+        initialRouteName: 'Splash',
 
-      <h1>Welcome to Our Shop</h1>
-      <Products />
-    </div>
+      }}>
+        <Stack.Screen name="Splash" component={SplashScreen} />
+        <Stack.Screen name="Login" component={LoginScreen} />
+        <Stack.Screen name="Register" component={RegisterScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
-};
-
-export default App
+}
