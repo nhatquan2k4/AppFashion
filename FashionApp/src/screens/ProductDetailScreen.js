@@ -14,7 +14,7 @@ const ProductDetailScreen = () => {
           <TouchableOpacity style={styles.backButton}>
             <Ionicons name="arrow-back" size={24} color="black" />
           </TouchableOpacity>
-          <Image source={{uri: "https://res-console.cloudinary.com/dfqdh40iu/media_explorer_thumbnails/910475c266b6bda96924172fe6ddc6d3/detailed"}} style={styles.productImage} />
+          <Image source={{uri:"https://res-console.cloudinary.com/dgmy6mekk/media_explorer_thumbnails/81a204f16152ebdfbd4ea5ec2545a17e/detailed"}} style={styles.productImage} />
           <TouchableOpacity style={styles.wishlistButton}>
             <Ionicons name="heart-outline" size={24} color="black" />
           </TouchableOpacity>

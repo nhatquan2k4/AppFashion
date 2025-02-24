@@ -1,6 +1,7 @@
 import React from "react";
 import {View } from "react-native";
 import HomeScreen from "./src/screens/HomeScreen"
+import ProductDetailScreen from "./src/screens/ProductDetailScreen";
 import Cart from "./src/screens/Cart"
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -24,5 +25,6 @@ export default function App() {
         <Stack.Screen name="Register" component={RegisterScreen} /> 
       </Stack.Navigator>
     </NavigationContainer>
+    // <HomeScreen/>
   );
 }

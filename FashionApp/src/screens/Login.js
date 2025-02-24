@@ -68,8 +68,8 @@ export default function LoginScreen() {
 
         <View style={styles.signupContainer}>
           <Text>Not registered yet?</Text>
-          <TouchableOpacity>
-            <Text style={styles.signupText}> Create an Account</Text>
+          <TouchableOpacity onPress={() => navigation.goBack()}>
+            <Text style={styles.signupText}>Create an Account</Text>
           </TouchableOpacity>
         </View>
       </View>
