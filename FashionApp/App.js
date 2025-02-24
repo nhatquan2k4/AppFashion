@@ -1,5 +1,5 @@
 import React from "react";
-import {View } from "react-native";
+import { View } from "react-native";
 import HomeScreen from "./src/screens/HomeScreen"
 import ProductDetailScreen from "./src/screens/ProductDetailScreen";
 import Cart from "./src/screens/Cart"
@@ -10,19 +10,23 @@ import LoginScreen from './src/screens/Login';
 import RegisterScreen from './src/screens/Register';
 
 
+
+
+
+
 const Stack = createStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={{ 
+      <Stack.Navigator screenOptions={{
         headerShown: false,
         initialRouteName: 'Splash',
-        
-         }}>
+
+      }}>
         <Stack.Screen name="Splash" component={SplashScreen} />
         <Stack.Screen name="Login" component={LoginScreen} />
-        <Stack.Screen name="Register" component={RegisterScreen} /> 
+        <Stack.Screen name="Register" component={RegisterScreen} />
       </Stack.Navigator>
     </NavigationContainer>
     // <HomeScreen/>
