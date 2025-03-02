@@ -1,15 +1,19 @@
 import React from 'react';
 import { View, Text, Image, StyleSheet} from 'react-native';
 import CustomButton from '../components/ButtonLoading'; 
+import { useNavigation } from '@react-navigation/native';
+
 
 const LoadingScreen = () => {
+  const navigation = useNavigation();
   return (
     <View style={styles.container}>
       <Image source={require('../assets/anh3.png')} style={styles.image} />
-      
+    
       <View style={styles.textContainer}>
         <Text style={styles.title}>Panda</Text>
-        <CustomButton title="SHOP NOW" type = 'outline' onPress={() => navigation.navigate('Splash')} />
+        <CustomButton title="SHOP NOW" type = 'outline' onPress={() => navigation.push('Splash')} />
+        
       </View>
     </View>
   );
