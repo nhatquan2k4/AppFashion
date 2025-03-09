@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet, ImageBackground } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, StyleSheet, ImageBackground, Keyboard, TouchableWithoutFeedback } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import Checkbox from 'expo-checkbox';
 import { useNavigation } from '@react-navigation/native';
@@ -10,70 +10,78 @@ export default function LoginScreen() {
   const [isRemember, setIsRemember] = useState(false);
 
   const navigation = useNavigation();
+  const isValidEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+};
 
   return (
-    <View style={styles.container}>
-      {/* Nửa trên */}
-      <ImageBackground source={require('../assets/anh2.png')} style={styles.topSection}>
+    // Bọc toàn bộ giao diện trong TouchableWithoutFeedback để ẩn bàn phím khi chạm ra ngoài
+    <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
+      <View style={styles.container}>
+        {/* Nửa trên */}
         <TouchableOpacity style={styles.backButton} onPress={() => navigation.goBack()}>
-          <Ionicons name="arrow-back" size={24} color="white" />
-        </TouchableOpacity>
-        <View style={styles.overlay} />
-        <Text style={styles.welcomeText}>Welcome Back!</Text>
-      </ImageBackground>
-
-      {/* Nửa dưới */}
-      <View style={styles.bottomSection}>
-        <View style={styles.inputWrapper}>
-          <Text style={styles.label}>Email address</Text>
-          <View style={styles.inputContainer}>
-            <Ionicons name="mail-outline" size={25} color="#888" style={styles.icon} />
-            <TextInput
-              style={styles.input}
-              placeholder="Enter email"
-              keyboardType="email-address"
-              value={email}
-              onChangeText={setEmail}
-            />
-          </View>
-        </View>
-
-        <View style={styles.inputWrapper}>
-          <Text style={styles.label}>Password</Text>
-          <View style={styles.inputContainer}>
-            <Ionicons name="lock-closed-outline" size={25} color="#888" style={styles.icon} />
-            <TextInput
-              style={styles.input}
-              placeholder="Enter your password"
-              secureTextEntry
-              value={password}
-              onChangeText={setPassword}
-            />
-          </View>
-        </View>
-
-        <View style={styles.row}>
-          <View style={styles.rememberMe}>
-            <Checkbox value={isRemember} onValueChange={setIsRemember} color={isRemember ? '#7F00FF' : undefined} />
-            <Text style={styles.rememberText}>Remember me</Text>
-          </View>
-          <TouchableOpacity>
-            <Text style={styles.forgotText}>Forgot Password?</Text>
+            <Ionicons name="arrow-back" size={24} color="black" />
           </TouchableOpacity>
-        </View>
+        <ImageBackground source={require('../assets/anh2.png')} style={styles.topSection}>
+          
+          <View style={styles.overlay} />
+          <Text style={styles.welcomeText}>Welcome Back!</Text>
+        </ImageBackground>
 
-        <TouchableOpacity style={styles.loginButton}>
-          <Text style={styles.loginText}>LOG IN</Text>
-        </TouchableOpacity>
+        {/* Nửa dưới */}
+        <View style={styles.bottomSection}>
+          <View style={styles.inputWrapper}>
+            <Text style={styles.label}>Email address</Text>
+            <View style={styles.inputContainer}>
+              <Ionicons name="mail-outline" size={25} color="#888" style={styles.icon} />
+              <TextInput
+                style={styles.input}
+                placeholder="Enter email"
+                keyboardType="email-address"
+                value={email}
+                onChangeText={setEmail}
+              />
+            </View>
+          </View>
 
-        <View style={styles.signupContainer}>
-          <Text>Not registered yet?</Text>
-          <TouchableOpacity onPress={() => navigation.goBack()}>
-            <Text style={styles.signupText}>Create an Account</Text>
+          <View style={styles.inputWrapper}>
+            <Text style={styles.label}>Password</Text>
+            <View style={styles.inputContainer}>
+              <Ionicons name="lock-closed-outline" size={25} color="#888" style={styles.icon} />
+              <TextInput
+                style={styles.input}
+                placeholder="Enter your password"
+                secureTextEntry
+                value={password}
+                onChangeText={setPassword}
+              />
+            </View>
+          </View>
+
+          <View style={styles.row}>
+            <View style={styles.rememberMe}>
+              <Checkbox value={isRemember} onValueChange={setIsRemember} color={isRemember ? '#7F00FF' : undefined} />
+              <Text style={styles.rememberText}>Remember me</Text>
+            </View>
+            <TouchableOpacity onPress={() => navigation.push('ForgotPassword')}>
+              <Text style={styles.forgotText}>Forgot Password?</Text>
+            </TouchableOpacity>
+          </View>
+
+          <TouchableOpacity style={styles.loginButton}>
+            <Text style={styles.loginText}>LOG IN</Text>
           </TouchableOpacity>
+
+          <View style={styles.signupContainer}>
+            <Text>Not registered yet?</Text>
+            <TouchableOpacity onPress={() => navigation.push('Register')}>
+              <Text style={styles.signupText}>Create an Account</Text>
+            </TouchableOpacity>
+          </View>
         </View>
       </View>
-    </View>
+    </TouchableWithoutFeedback>
   );
 }
 
@@ -83,7 +91,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
   topSection: {
-    flex: 1.1, // Nửa trên chiếm 1.2 phần
+    flex: 1.1,
     justifyContent: 'center',
     alignItems: 'center',
     width: '100%',
@@ -94,10 +102,10 @@ const styles = StyleSheet.create({
   },
   backButton: {
     position: 'absolute',
-    top: 40, // Điều chỉnh khoảng cách xuống dưới 
+    top: 40,
     left: 10,
-    zIndex: 10,
     padding: 10,
+    zIndex: 10,
   },
   welcomeText: {
     fontSize: 24,
@@ -105,14 +113,8 @@ const styles = StyleSheet.create({
     color: 'white',
     textAlign: 'center',
   },
-  subText: {
-    fontSize: 16,
-    color: 'white',
-    textAlign: 'center',
-    marginTop: 10,
-  },
   bottomSection: {
-    flex: 1.8, // Nửa dưới chiếm 1.8 phần
+    flex: 1.8,
     backgroundColor: 'white',
     borderTopLeftRadius: 30,
     borderTopRightRadius: 30,
