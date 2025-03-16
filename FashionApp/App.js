@@ -28,8 +28,8 @@ export default function App() {
         <Stack.Screen name="Register" component={RegisterScreen} />
         <Stack.Screen name="ForgotPassword" component={ForgotPasswordScreen} />
         <Stack.Screen name="Success" component={SuccessScreen} />
-        <Stack.Screen name="Failed" component={FailedScreen} /> 
-        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Failed" component={FailedScreen} />
+        <Stack.Screen name="Home" component={HomeScreen} /> 
         <Stack.Screen name="ProductDetail" component={ProductDetailScreen} />
         <Stack.Screen name="Cart" component={Cart} />
       </Stack.Navigator>
