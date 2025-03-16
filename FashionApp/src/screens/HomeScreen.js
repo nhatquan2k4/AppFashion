@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { View, Text, StyleSheet, Animated, FlatList, ActivityIndicator, Image } from "react-native";
+import { View, Text, StyleSheet, Animated, FlatList, ActivityIndicator, Image, TouchableOpacity } from "react-native";
 import axios from "axios";
 import Toolbar from "../components/Toolbar";
 import Brand from "../components/Brand";
@@ -49,8 +49,9 @@ const HomeScreen = () => {
         <FlatList
           data={products}
           keyExtractor={(item) => item._id}
+          numColumns={2} // Hiển thị 2 cột
           renderItem={({ item }) => (
-            <View style={styles.productItem}>
+            <TouchableOpacity style={styles.productItem}>
               {/* Hiển thị ảnh sản phẩm */}
               <Image source={{ uri: item.colors[0].image_url }} style={styles.productImage} />
               <View style={styles.productInfo}>
@@ -58,13 +59,13 @@ const HomeScreen = () => {
                 <Text style={styles.productPrice}>Giá: {item.price} VNĐ</Text>
                 <Text style={styles.productBrand}>Thương hiệu: {item.brand}</Text>
               </View>
-            </View>
+            </TouchableOpacity>
           )}
         />
 
       )}
-
-      <Watch />
+ 
+      {/* <Watch /> */}
 
     </View>
   );
@@ -84,17 +85,15 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   productItem: {
-    flexDirection: "row",
-    backgroundColor: "#fff",
+    flex: 1,
+    backgroundColor: "#f9f9f9",
+    margin: 10,
     padding: 10,
-    marginVertical: 5,
-    marginHorizontal: 10,
-    borderRadius: 8,
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 4,
+    alignItems: "center",
+    borderRadius: 10,
     elevation: 3,
+    borderWidth: 2, 
+    borderColor: "black",
   },
   productImage: {
     width: 80,

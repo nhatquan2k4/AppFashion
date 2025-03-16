@@ -13,7 +13,7 @@ export default function Cart() {
                 {/* Hình ảnh sản phẩm */}
                 <Image
                     source={{
-                        uri: "https://neonize.gumlet.io/wp-content/uploads/2022/08/Valorant-Logo-Neon-Light-Sign-Neonize.jpg",
+                        uri: "https://res.cloudinary.com/dfqdh40iu/image/upload/v1739813692/Palermo%20Clobber%20Dresscode_Xanh%20Ng%E1%BB%8Dc.webp",
                     }}
                     style={styles.image}
                 />
