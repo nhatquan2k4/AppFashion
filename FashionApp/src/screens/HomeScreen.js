@@ -1,14 +1,14 @@
 import React, { useState, useEffect, useRef } from "react";
-import { View, Text, StyleSheet, Animated, FlatList, ActivityIndicator, Image } from "react-native";
+import { View, Text, StyleSheet, Animated, FlatList, ActivityIndicator, Image, TouchableOpacity } from "react-native";
 import axios from "axios";
+import { useNavigation } from "@react-navigation/native";
 import Toolbar from "../components/Toolbar";
 import Brand from "../components/Brand";
 import Watch from "../components/Watch";
 import Profile from "./Profile";
 
-
 const HomeScreen = () => {
-
+  const navigation = useNavigation();
   const [isProfileVisible, setProfileVisible] = useState(false);
   const profileAnim = useRef(new Animated.Value(-250)).current;
   const [products, setProducts] = useState([]);
@@ -50,22 +50,22 @@ const HomeScreen = () => {
           data={products}
           keyExtractor={(item) => item._id}
           renderItem={({ item }) => (
-            <View style={styles.productItem}>
-              {/* Hiển thị ảnh sản phẩm */}
+            <TouchableOpacity 
+              style={styles.productItem} 
+              onPress={() => navigation.navigate("ProductDetail", { product: item })}
+            >
               <Image source={{ uri: item.colors[0].image_url }} style={styles.productImage} />
               <View style={styles.productInfo}>
                 <Text style={styles.productName}>{item.name}</Text>
                 <Text style={styles.productPrice}>Giá: {item.price} VNĐ</Text>
                 <Text style={styles.productBrand}>Thương hiệu: {item.brand}</Text>
               </View>
-            </View>
+            </TouchableOpacity>
           )}
         />
-
       )}
 
       <Watch />
-
     </View>
   );
 };

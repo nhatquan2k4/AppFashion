@@ -1,8 +1,10 @@
 import React from "react";
 import { View, TouchableOpacity, Text, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
 
 export default function Toolbar({ toggleProfile }) {
+      const navigation = useNavigation();
   return (
     <View style={styles.container}>
       <View style={styles.box1}>
@@ -18,7 +20,8 @@ export default function Toolbar({ toggleProfile }) {
           <Ionicons name="notifications-outline" size={24} color="black" />
         </TouchableOpacity>
 
-        <TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => navigation.navigate("Cart")}>
           <Ionicons name="bag-outline" size={24} color="black" />
         </TouchableOpacity>
 

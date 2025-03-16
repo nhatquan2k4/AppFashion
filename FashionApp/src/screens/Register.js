@@ -81,7 +81,8 @@ export default function RegisterScreen() {
             </View>
           </View>
 
-          <TouchableOpacity style={styles.registerButton}>
+          <TouchableOpacity style={styles.registerButton}
+            onPress={() => navigation.push('Login')}>
             <Text style={styles.registerText}>REGISTER</Text>
           </TouchableOpacity>
 

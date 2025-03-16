@@ -1,13 +1,20 @@
 import React, { useState } from "react";
 import { Text, View, StyleSheet, Image, TouchableOpacity } from "react-native";
 import QuantitySelector from "../components/QuantitySelector";
-import CheckoutScreen from "./CheckoutScreen"; 
+import CheckoutScreen from "./CheckoutScreen";
+import { useNavigation } from "@react-navigation/native";
+import { Ionicons } from "@expo/vector-icons";
+
 
 export default function Cart() {
+    const navigation = useNavigation();
     const [checkoutVisible, setCheckoutVisible] = useState(false); // Trạng thái hiển thị Checkout
 
     return (
         <View style={styles.container}>
+            <TouchableOpacity style={styles.backButton} onPress={() => navigation.goBack()}>
+                <Ionicons name="arrow-back" size={24} color="black" />
+            </TouchableOpacity>
             <Text style={styles.header}>My Cart</Text>
             <View style={styles.itemBox}>
                 {/* Hình ảnh sản phẩm */}
@@ -111,10 +118,10 @@ const styles = StyleSheet.create({
         right: 10,
     },
     checkoutButton: {
-        flexDirection: "row",  
+        flexDirection: "row",
         justifyContent: "center",
-        alignItems: "center", 
-        backgroundColor: "#6a1b9a", 
+        alignItems: "center",
+        backgroundColor: "#6a1b9a",
         paddingVertical: 15,
         paddingHorizontal: 20,
         borderRadius: 50,
@@ -123,24 +130,29 @@ const styles = StyleSheet.create({
         width: "90%",
         alignSelf: "center",
     },
-    
+
     checkoutText: {
         color: "white",
         fontSize: 18,
         fontWeight: "bold",
-        marginRight: 10, 
+        marginRight: 10,
     },
-    
+
     priceContainer: {
         backgroundColor: "#4b0082",
         paddingVertical: 5,
         paddingHorizontal: 15,
         borderRadius: 20,
     },
-    
+
     checkoutPrice: {
         color: "white",
         fontSize: 16,
         fontWeight: "bold",
     },
+    backButton: {
+        position: "absolute",
+        left: 20,
+        top: 40,
+      },
 });

@@ -20,9 +20,9 @@ const navigation = useNavigation();
         <Text style = {{fontSize:12,fontWeight:'bold',marginTop: 30, textAlign: 'center'}}>Each men and women has their own style,{'\n'}  Panda help you to create your unique style.</Text>
 
 
-          <CustomButton title = "LOGIN" type = 'outline' onPress = {() => navigation.push('Login')} />
+          <CustomButton title = "LOGIN" type = 'fill' onPress = {() => navigation.push('Login')} />
           <Text style = {{top: 98, fontSize:14, fontWeight:'bold'}}>--- OR ---</Text>
-          <CustomButton title = "REGISTER" type = 'fill'  onPress = {() => navigation.push('Register')} />
+          <CustomButton title = "REGISTER" type = 'outline'  onPress = {() => navigation.push('Register')} />
   
       </View>
     </View>

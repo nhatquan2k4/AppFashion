@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { View, Text, TouchableOpacity, Modal, StyleSheet } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
 export default function CheckoutScreen({ visible, onClose }) {
+    const navigator = useNavigation();
     return (
         <Modal visible={visible} animationType="slide" transparent={true}>
             <View style={styles.overlay}>
@@ -42,7 +44,13 @@ export default function CheckoutScreen({ visible, onClose }) {
                         By placing an order you agree to our Terms And Conditions.
                     </Text>
 
-                    <TouchableOpacity style={styles.placeOrderButton}>
+                    <TouchableOpacity
+                        style={styles.placeOrderButton}
+                        onPress={() => {
+                            onClose();  // Đóng modal
+                            setTimeout(() => navigator.navigate("Success"), 300); // Chuyển màn hình sau khi modal đóng
+                        }}
+                    >
                         <Text style={styles.placeOrderText}>PLACE ORDER</Text>
                     </TouchableOpacity>
                 </View>
