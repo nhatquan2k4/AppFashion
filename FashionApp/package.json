@@ -23,6 +23,7 @@
     "expo": "~52.0.32",
     "expo-checkbox": "~4.0.1",
     "expo-status-bar": "~2.0.1",
+    "firebase": "^11.4.0",
     "mongodb": "^6.13.0",
     "msnodesqlv8": "^4.5.0",
     "mssql": "^11.0.1",
