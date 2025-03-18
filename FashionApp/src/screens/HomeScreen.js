@@ -14,6 +14,7 @@ const HomeScreen = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
 
+
   useEffect(() => {
     axios.get("http://localhost:5000/products/get")
       .then(response => {

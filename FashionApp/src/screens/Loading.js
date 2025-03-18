@@ -1,41 +1,45 @@
-import React from 'react';
-import { View, Text, Image, StyleSheet} from 'react-native';
-import CustomButton from '../components/ButtonLoading'; 
+import React, { useState } from "react";
+import { View, TouchableOpacity, Text, StyleSheet } from "react-native";
+import LoadingOverlay from "../components/LoadingOverlay";
 
-const LoadingScreen = () => {
+const Loading = () => {
+  const [loading, setLoading] = useState(false);
+
+  const handlePress = () => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000); // Giả lập quá trình loading trong 3 giây
+  };
+
   return (
     <View style={styles.container}>
-      <Image source={require('../assets/anh3.png')} style={styles.image} />
-      
-      <View style={styles.textContainer}>
-        <Text style={styles.title}>Panda</Text>
-        <CustomButton title="SHOP NOW" type = 'outline' onPress={() => navigation.navigate('Splash')} />
-      </View>
+      <TouchableOpacity style={styles.button} onPress={handlePress}>
+        <Text style={styles.buttonText}>Hiển thị Loading</Text>
+      </TouchableOpacity>
+
+      {/* Sử dụng Component LoadingOverlay */}
+      <LoadingOverlay visible={loading} text="Vui lòng chờ..." />
     </View>
   );
 };
 
-export default LoadingScreen;
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
   },
-  image: {
-    flex: 1,
-    resizeMode: 'contain',
+  button: {
+    padding: 15,
+    backgroundColor: "#007bff",
+    borderRadius: 8,
   },
-  textContainer: {
-    position: 'absolute',
-    bottom: 150, // Đẩy text & button lên 100px từ bottom
-    alignItems: 'center',
-  },
-  title: {
-    fontSize: 80,
-    color: 'white',
-    fontWeight: 'bold',
-    marginBottom: 20, // Tạo khoảng cách giữa title và button
+  buttonText: {
+    color: "#fff",
+    fontSize: 16,
+    fontWeight: "bold",
   },
 });
+
+export default Loading;
