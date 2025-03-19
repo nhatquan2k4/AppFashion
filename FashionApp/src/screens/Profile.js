@@ -24,7 +24,7 @@ const Profile = ({ isVisible, toggleProfile, profileAnim }) => {
         </View>
 
         <TouchableOpacity style={styles.button}
-          onPress={() => { navigation.navigate("Cart") }}>
+          onPress={() => navigation.navigate("Cart")}>
           <Ionicons name="bag-outline" size={24} color="white" />
           <Text style={styles.buttonText}>Cart</Text>
         </TouchableOpacity>
@@ -57,7 +57,7 @@ const Profile = ({ isVisible, toggleProfile, profileAnim }) => {
           <Text style={styles.buttonText}>About</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.button}
-          onPress={() => { navigation.navigate("Login") }}>
+          onPress={() => navigation.navigate("Login")}>
           <Ionicons name="log-out-outline" size={24} color="white" />
           <Text style={styles.buttonText}>LogOut</Text>
         </TouchableOpacity>
@@ -72,7 +72,7 @@ const styles = StyleSheet.create({
     top: 0,
     bottom: 0,
     width: 250,
-    backgroundColor: "#8077fe",
+    backgroundColor: "#6342E8",
     padding: 20,
     shadowColor: "#000",
     shadowOpacity: 0.3,
@@ -93,6 +93,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     marginBottom: 20,
+    marginTop: 55,
   },
   avatar: {
     width: 50,
@@ -114,7 +115,7 @@ const styles = StyleSheet.create({
   },
   button: {
     padding: 10,
-    backgroundColor: "#8077fe",
+    backgroundColor: "#6342E8",
     borderRadius: 5,
     marginVertical: 5,
     alignItems: "center",

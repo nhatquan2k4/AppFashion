@@ -4,7 +4,7 @@ import { useNavigation } from "@react-navigation/native";
 import SelectionModal from "../components/SelectionModal";
 
 export default function CheckoutScreen({ visible, onClose }) {
-    const navigator = useNavigation();
+    const navigation = useNavigation();
 
     const [deliveryMethod, setDeliveryMethod] = useState("Chọn");
     const [paymentMethod, setPaymentMethod] = useState("Chọn");
@@ -71,7 +71,7 @@ export default function CheckoutScreen({ visible, onClose }) {
                         style={styles.placeOrderButton}
                         onPress={() => {
                             onClose();
-                            setTimeout(() => navigator.navigate("Success"), 300);
+                            setTimeout(() => navigation.navigate("Success"), 300);
                         }}
                     >
                         <Text style={styles.placeOrderText}>ĐẶT HÀNG</Text>
