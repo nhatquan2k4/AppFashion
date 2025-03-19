@@ -23,26 +23,8 @@ export default function ForgotPasswordScreen() {
             Alert.alert('Error', 'Email không hợp lệ. Vui lòng nhập đúng định dạng.');
             return;
         }
-
-        try {
-            const response = await fetch("Điền Link Vào đây", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ email })
-            });
-
-            const data = await response.json();
-            if (response.ok) {
-                Alert.alert('Thành công', 'Mã OTP đã được gửi vào email');
-                navigation.navigate('VerifyOTP', { email });
-            } else {
-                Alert.alert('Error', data.message || 'Không thể gửi OTP');
-            }
-        } catch (error) {
-            Alert.alert('Error', 'Có lỗi xảy ra, vui lòng thử lại');
-        }
+        navigation.push('Code');
     };
-
     return (
         <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
             <View style={styles.container}>
@@ -63,7 +45,7 @@ export default function ForgotPasswordScreen() {
                         autoCapitalize="none"
                     />
 
-                    <TouchableOpacity style={styles.button} onPress={handleSendOTP}>
+                    <TouchableOpacity style={styles.button} onPress={handleSendOTP} >
                         <Text style={styles.buttonText}>Send OTP code</Text>
                     </TouchableOpacity>
                 </View>
@@ -77,13 +59,13 @@ const styles = StyleSheet.create({
     container: { 
         flex: 1, 
         backgroundColor: '#fff', 
-        paddingHorizontal: 20 
     },
     backButton: { 
         position: 'absolute', 
         top: 40, 
         left: 10, 
-        padding: 10 
+        padding: 10,
+        zIndex: 10,
     },
     content: { 
         flex: 1, 
@@ -101,18 +83,17 @@ const styles = StyleSheet.create({
         marginBottom: 20 
     },
     input: {
-        width: '100%',
-        height: 50,
+        width: '80%',
         borderWidth: 1,
         borderColor: '#ccc',
         borderRadius: 10,
-        paddingHorizontal: 15,
+        padding: 12,
         marginBottom: 20
     },
     button: {
-        backgroundColor: '#007bff',
+        backgroundColor: '#6342E8',
         paddingVertical: 12,
-        width: '100%',
+        width: '80%',
         alignItems: 'center',
         borderRadius: 54
     },
