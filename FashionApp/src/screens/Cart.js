@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
     productName: {
         fontSize: 16,
         fontWeight: "bold",
-        color: "#6a1b9a",
+        color: "#6342E8",
     },
     collection: {
         fontSize: 12,
@@ -123,7 +123,7 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: "#6a1b9a",
+        backgroundColor: "#6342E8",
         paddingVertical: 15,
         paddingHorizontal: 20,
         borderRadius: 50,

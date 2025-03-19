@@ -102,7 +102,7 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         padding: 20,
         borderWidth: 2,
-        borderColor: "#6a1b9a",
+        borderColor: "#6342E8",
     },
     closeButton: {
         position: "absolute",
@@ -124,17 +124,16 @@ const styles = StyleSheet.create({
         justifyContent: "space-between",
         paddingVertical: 12,
         borderWidth: 1,
-        borderColor: "#6a1b9a",
+        borderColor: "#6342E8",
         borderRadius: 10,
         paddingHorizontal: 15,
         marginVertical: 5,
-        backgroundColor: "#f8e1ff",
     },
     label: {
         fontSize: 16,
     },
     actionText: {
-        color: "#6a1b9a",
+        color: "#6342E8",
         fontWeight: "bold",
     },
     totalCostContainer: {
@@ -145,7 +144,7 @@ const styles = StyleSheet.create({
     totalCost: {
         fontSize: 16,
         fontWeight: "bold",
-        color: "#6a1b9a",
+        color: "#6342E8",
     },
     terms: {
         fontSize: 12,
@@ -154,7 +153,7 @@ const styles = StyleSheet.create({
         marginTop: 10,
     },
     placeOrderButton: {
-        backgroundColor: "#6a1b9a",
+        backgroundColor: "#6342E8",
         paddingVertical: 15,
         borderRadius: 50,
         alignItems: "center",
