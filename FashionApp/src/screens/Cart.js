@@ -64,7 +64,8 @@ const styles = StyleSheet.create({
     },
     header: {
         fontSize: 20,
-        margin: 20,
+        marginTop: 50, 
+        marginBottom: 20
     },
     itemBox: {
         flexDirection: "row",
@@ -79,6 +80,7 @@ const styles = StyleSheet.create({
         elevation: 3,
         width: "90%",
         position: "relative",
+        marginTop: 30
     },
     image: {
         width: 60,
