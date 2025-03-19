@@ -1,8 +1,4 @@
-import React from "react";
-import { View } from "react-native";
-import HomeScreen from "./src/screens/HomeScreen"
-import ProductDetailScreen from "./src/screens/ProductDetailScreen";
-import Cart from "./src/screens/Cart"
+import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import LoadingScreen from './src/screens/Loading';
@@ -12,6 +8,9 @@ import RegisterScreen from './src/screens/Register';
 import ForgotPasswordScreen from './src/screens/ForgotPassword';
 import SuccessScreen from "./src/screens/SuccessScreen";
 import FailedScreen from "./src/screens/FailedScreen";
+import HomeScreen from './src/screens/HomeScreen';
+import ProductDetailScreen from './src/screens/ProductDetailScreen';
+import Cart from './src/screens/Cart';
 
 
 const Stack = createStackNavigator();
